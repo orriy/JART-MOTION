@@ -120,7 +120,7 @@ img {
   margin: 4rem;
 }
 .sec2 .slide2 {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   position: relative;
   width: 40%;
   height: 20%;
@@ -157,13 +157,16 @@ img {
 }
 /* section3 start */
 .sec3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin: auto;
 }
 .sec3_img {
   position: relative;
+  width: 50%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  margin: 2rem;
+  right: -21.5%;
 }
 .sec3_txt {
   position: absolute;
