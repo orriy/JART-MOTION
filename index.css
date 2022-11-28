@@ -26,18 +26,18 @@ img {
 
 .hd {
   /* border: 5px solid red; */
-  height: 160px;
+  height: 150px;
   z-index: 900;
 }
-.hd h1 {
-  border: 1px solid green;
-  margin-top: 1rem;
-}
+
 .hd .top_menu {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
-.hd .top_menu a::before {
+.top_menu h1 {
+  margin: 2rem;
+}
+.hd .right a::before {
   content: "ㅣ";
 }
 
@@ -95,6 +95,7 @@ img {
 }
 .sec1 .heading1 {
   border: 1px solid red;
+  width: 500px;
 }
 .card_con {
   max-width: var(--mw);
@@ -155,18 +156,23 @@ img {
   /* border: 1px solid red; */
   display: block;
 }
+
 /* section3 start */
 .sec3 {
   margin: auto;
 }
+.sec3_img a {
+  padding: 1rem;
+}
 .sec3_img {
   position: relative;
-  width: 50%;
+  width: 70%;
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-between;
   margin: 2rem;
-  right: -21.5%;
+  right: -10%;
+  top: 70px;
 }
 .sec3_txt {
   position: absolute;
@@ -174,12 +180,50 @@ img {
   left: 10%;
 }
 .sec3_title2 {
-  text-align: center;
+  font-size: var(--font-size-m);
+  font-weight: bold;
+  position: absolute;
+  right: 53%;
 }
 .sec3_title span {
   display: block;
 }
+.link2 {
+  border: 1px solid red;
+  position: relative;
+  width: 30px;
+  right: -47vw;
+  bottom: 50px;
+}
 
+/* footer */
+footer > * {
+  /* display: flex;
+  justify-content: space-between; */
+}
+footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: #222222;
+  left: 0;
+}
+.foot_top nav a {
+  display: inline-block;
+  padding-left: 20px;
+  position: relative;
+  font-size: 0.85rem;
+  line-height: 60px;
+  background-color: #222222;
+  right: -9%;
+}
+.copy span {
+  display: block;
+}
+.copy2 {
+  position: relative;
+}
 @media (max-width: 1000px) {
   .hd nav {
     display: none;
