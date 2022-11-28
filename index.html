@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main Index</title>
     <link rel="stylesheet" href="./my_rest.css" />
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- Link Swiper's CSS -->
@@ -13,7 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./index.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
       integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
@@ -27,7 +28,7 @@
         <a href="#"><img src="./Index img/Logo/logo.png" alt="" /></a>
       </h1>
       <div class="top_menu">
-        <div>
+        <div class="right">
           <a href="#">홈</a>
           <a href="#">로그인</a>
           <a href="#">회원가입</a>
@@ -72,7 +73,7 @@
       </nav>
     </header>
 
-    <ul>
+    <ul class="floating">
       <li>
         <a href="#"><img src="./Index img/icons/floating01.png" alt="" /></a>
       </li>
@@ -80,7 +81,9 @@
         <a href="#"><img src="./Index img/icons/floating02.png" alt="" /></a>
       </li>
       <li>
-        <a href="#"><img src="" alt="공지사항" /></a>
+        <a href="#"
+          ><img src="./Index img/icons/notification.png" alt="공지사항"
+        /></a>
       </li>
     </ul>
 
@@ -106,15 +109,6 @@
           <div class="swiper-slide">
             <img src="./Index img/banner04.png" alt="" />
           </div>
-          <div class="swiper-slide">
-            <img src="./Index img/banner05.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./Index img/banner06.png" alt="" />
-          </div>
-        </div>
-        <div>
-          <a href="#"><img src="./Index img/icons/pause.png" alt="" /></a>
         </div>
         <div class="swiper-button-next next1"></div>
         <div class="swiper-button-prev prev1"></div>
@@ -124,7 +118,7 @@
         <li class="card_list">
           <div class="front">
             <p>디자인 시공 문의 및 의뢰</p>
-            <div><img src="./Index img/icons/icon01.png" alt="" /></div>
+            <div><img src="./Index img/icons/request.png" alt="" /></div>
           </div>
           <div class="back">
             <p>
@@ -137,7 +131,7 @@
         <li class="card_list">
           <div class="front">
             <p>디자인 시공 문의 및 의뢰</p>
-            <div><img src="./Index img/icons/icon02.png" alt="" /></div>
+            <div><img src="./Index img/icons/find.png" alt="" /></div>
           </div>
           <div class="back">
             <p>
@@ -150,7 +144,7 @@
         <li class="card_list">
           <div class="front">
             <p>디자인 시공 문의 및 의뢰</p>
-            <div><img src="./Index img/icons/icon03.png" alt="" /></div>
+            <div><img src="./Index img/icons/clipboard.png" alt="" /></div>
           </div>
           <div class="back">
             <p>
@@ -164,7 +158,21 @@
         <li class="card_list">
           <div class="front">
             <p>디자인 시공 문의 및 의뢰</p>
-            <div><img src="./Index img/icons/icon04.png" alt="" /></div>
+            <div><img src="./Index img/icons/artist.png" alt="" /></div>
+          </div>
+          <div class="back">
+            <p>
+              의뢰한 디자인, 작화가 모두 완성이 되면 검수를 통해 최종적으로
+              제작완료를 합니다. 최상의 퀄리티와 최고의 만족을 선사하는 믿을 수
+              있는 제이아트 공간입니다. 언제나 변치않는 창조적인 컨셉제안과
+              시공을 약속드립니다. 감사합니다.
+            </p>
+          </div>
+        </li>
+        <li class="card_list">
+          <div class="front">
+            <p>디자인 시공 문의 및 의뢰</p>
+            <div><img src="./Index img/icons/checked.png" alt="" /></div>
           </div>
           <div class="back">
             <p>
@@ -179,16 +187,16 @@
     </section>
     <section class="sec2">
       <h2>Types of Murals</h2>
-      <div>
+      <div class="title_txt">
         <p>
           제이아트모션만의 기술과 경험으로 고객분들을 위한 작품 속에 예술적
           가치를 담아 제작하고 있습니다.
         </p>
       </div>
-      <div>
+      <div class="sec2_txt">
         <p>One of many styles 01</p>
-        <p>Trick Art</p>
-        <p>
+        <p class="type_title">Trick Art</p>
+        <p class="type_txt">
           <span>착시예술인 트릭아트는 평면이 아닌 입체를 강조하며</span>
           <span>빛의 굴절과 반사를 이용해 원근법과 음영법을 사용하여</span>
           <span
@@ -197,8 +205,10 @@
           >
         </p>
         <div class="link1">
-          <a href="#" class="link">More</a>
-          <img src="./Index img/icons/index_arrow.png" alt="" />
+          <span>More</span>
+          <a href="#" class="link_img"
+            ><img src="./Index img/icons/index_arrow.png" alt=""
+          /></a>
         </div>
       </div>
       <!-- Swiper -->
@@ -217,30 +227,22 @@
           <div class="swiper-slide">Slide 5</div>
           <div class="swiper-slide">Slide 6</div>
           <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-          <div class="swiper-slide">Slide 10</div>
-          <div class="swiper-slide">Slide 11</div>
-          <div class="swiper-slide">Slide 12</div>
-          <div class="swiper-slide">Slide 13</div>
-          <div class="swiper-slide">Slide 14</div>
         </div>
       </div>
     </section>
     <section class="sec3">
-      <h2>JARTMOTION GALLERY</h2>
-      <div>
-        <p>저희 제이아트모션은 모든 일에 항상 신뢰를 약속드리며</p>
-        <p>최상의 작품들을 제공하기 위하여 최선을 다 하겠습니다.</p>
+      <div class="sec3_txt">
+        <h2>JARTMOTION GALLERY</h2>
+        <p class="sec3_title">
+          <span>저희 제이아트모션은 모든 일에 항상 신뢰를 약속드리며</span>
+          <span>최상의 작품들을 제공하기 위하여 최선을 다 하겠습니다.</span>
+        </p>
       </div>
-      <div><p>work</p></div>
-      <div>
+      <div class="sec3_title2"><p>work</p></div>
+      <div class="sec3_img">
         <a href="#"><img src="./Index img/Work01.png" alt="" /></a>
         <a href="#"><img src="./Index img/Work02.png" alt="" /></a>
         <a href="#"><img src="./Index img/work03.png" alt="" /></a>
-        <a href="#"><img src="./Index img/Work04.png" alt="" /></a>
-        <a href="#"><img src="./Index img/Work05.png" alt="" /></a>
-        <a href="#"><img src="./Index img/Work06.png" alt="" /></a>
       </div>
       <div class="link2">
         <a href="#"><link rel="stylesheet" href="" />More</a>
