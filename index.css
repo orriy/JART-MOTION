@@ -104,7 +104,14 @@ img {
   border: 1px solid red;
   width: 500px;
 }
-
+.sec1 h2 {
+  max-width: var(--mw);
+  /* border: 1px solid red; */
+  text-align: center;
+  margin: 1rem;
+  font-size: var(--font-size-m);
+  font-weight: bold;
+}
 .card_con {
   max-width: var(--mw);
   margin: auto;
