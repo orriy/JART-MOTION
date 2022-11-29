@@ -35,7 +35,9 @@ img {
   justify-content: space-between;
 }
 .top_menu h1 {
+  position: relative;
   margin: 2rem;
+  left: -5%;
 }
 .hd .right a::before {
   content: "ㅣ";
@@ -88,15 +90,21 @@ img {
   width: 80px;
   height: 80px;
   border-radius: 100%;
+  padding: 0.35rem;
 }
 
 .slide1 {
   width: 100%;
 }
+.wrap {
+  width: 100%;
+  height: 100vh;
+}
 .sec1 .heading1 {
   border: 1px solid red;
   width: 500px;
 }
+
 .card_con {
   max-width: var(--mw);
   margin: auto;
@@ -107,18 +115,55 @@ img {
   width: calc(100% / 5 - 0.5rem);
   position: relative;
   perspective: 900px;
-  background-color: #222222;
+
   backdrop-filter: blur(10px);
   border-radius: 1rem;
+  padding-top: 17%;
 }
-
+.card_list > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  backface-visibility: hidden;
+  transition: 0.5s;
+  background-color: #222222;
+}
 .front img {
-  width: 60px;
+  position: absolute;
+  width: 100px;
+  background-color: #222222;
+  /* border: 1px solid red; */
+  right: 30%;
+  top: 90px;
+}
+.front p {
+  background-color: #222222;
+  /* border: 1px solid blue; */
+  text-align: center;
+}
+.front {
+  transform: rotateY(0deg);
+}
+.back p {
+  background-color: #222222;
+  text-align: left;
+}
+.back {
+  transform: rotateY(-180deg);
+}
+.card_list:hover > .front {
+  transform: rotateY(180deg);
+}
+.card_list:hover > .back {
+  transform: rotateY(0);
 }
 
 /* section2 start */
 .sec2 {
-  margin: 4rem;
+  margin: 6rem;
 }
 .sec2 .slide2 {
   /* border: 1px solid red; */
@@ -129,8 +174,10 @@ img {
   margin: 2rem;
 }
 .sec2 h2 {
-  text-align: right;
+  position: relative;
+  left: 55%;
   width: var(--mw);
+  font-size: var(--font-size-m);
 }
 .title_txt {
   text-align: right;
@@ -145,6 +192,7 @@ img {
 .type_title {
   line-height: 4rem;
   font-weight: bold;
+  font-size: var(--font-size-m);
 }
 .link1 {
   border: 1px solid red;
@@ -171,13 +219,13 @@ img {
   /* flex-wrap: wrap; */
   justify-content: space-between;
   margin: 2rem;
-  right: -10%;
+  right: -8%;
   top: 70px;
 }
 .sec3_txt {
   position: absolute;
   top: 99vw;
-  left: 10%;
+  left: 9.7%;
 }
 .sec3_title2 {
   font-size: var(--font-size-m);
