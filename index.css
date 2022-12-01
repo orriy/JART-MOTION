@@ -427,7 +427,7 @@ footer::before {
     font-size: 10px;
     padding: 1rem;
   }
-  .floating {
+  .sec1 .floating {
     display: none;
   }
   .sec1 .heading1 {
