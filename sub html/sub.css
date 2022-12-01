@@ -1,0 +1,118 @@
+:root {
+  --point-c1: #222222;
+  --point-c2: #fff;
+  --mw: 1500px;
+  --font-size-lg: 32px;
+  --font-size-m: 24px;
+  --font-size-s: 16px;
+  --font-size-ss: 14px;
+}
+
+/* header top_menu */
+.hd > * {
+  /* border-left: 1px solid red; */
+  max-width: var(--mw);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.hd {
+  /* border: 5px solid red; */
+  background-image: url(./img/Sub/sub01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  z-index: 900;
+}
+
+.hd .top_menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+.top_menu h1 {
+  position: relative;
+  margin: 2rem;
+  left: -7%;
+}
+.hd .right {
+  position: absolute;
+  right: -4%;
+}
+.hd .right a::after {
+  content: "ㅣ";
+  counter-reset: none;
+}
+.hd .right a:last-child::after {
+  content: "";
+}
+
+/* header > nav */
+.gnb {
+  position: relative;
+  display: flex;
+  height: calc(100% - 30px);
+  margin: auto;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  padding: 0 5rem 0 5rem;
+  right: 150px;
+}
+
+.gnb > li {
+  /* border: solid 1px green; */
+
+  justify-content: space-between;
+  text-align: center;
+  font-size: var(--font-size-m);
+}
+.gnb a {
+  display: block;
+  padding: 0.5rem;
+  white-space: nowrap;
+  border: 1px solid var(--point-c2);
+  border-width: thin;
+  width: 350%;
+}
+
+.sub {
+  border: 1px solid yellow;
+  position: absolute;
+  font-size: var(--font-size-s);
+  display: none;
+}
+
+/* section */
+.sec {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.slide_bar {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: #222222;
+  left: 0;
+  top: 50%;
+}
+.slide_bar {
+  display: inline-block;
+  padding-left: 16px;
+  position: relative;
+  font-size: 1rem;
+  line-height: 60px;
+  background-color: #222222;
+  right: -9%;
+}
+.slide_bar a {
+  background-color: #222222;
+}
+.sec1 {
+  display: inline;
+}
